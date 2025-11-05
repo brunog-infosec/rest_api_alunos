@@ -1,3 +1,14 @@
+# Lang (pt-BR)
+
+## REST API Alunos
+
+API RESTful para cadastro e consulta de alunos, feita em Node.js e Express.
+
+- 🧩 Stack: Node.js, Express, MariaDB, Sequelize ORM
+- 🔐 Autenticação: JWT
+- 🧠 Aprendizado: CRUD completo e middleware de validação
+- 🚀 Para rodar: configure .env.example, criando um novo .env com seus dados locais, depois npm install && npm run dev
+
 A RESTful API for managing student data.
 
 ## Overview
@@ -17,7 +28,7 @@ This project implements a REST API that allows performing CRUD operations (Creat
 
 - Node.js
 - Express.js
-- Database (MongoDB/MySQL/PostgreSQL)
+- Database (MariaDB)
 - RESTful architecture
 
 ## Setup
