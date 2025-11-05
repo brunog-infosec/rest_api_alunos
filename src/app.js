@@ -14,10 +14,7 @@ import tokenRoutes from './routes/TokenRoutes';
 import alunoRoutes from './routes/alunoRoutes';
 import photoRoutes from './routes/photoRoutes';
 
-const whiteList = [
-  'http://34.39.144.113:80',
-  'http://localhost:3000',
-];
+const whiteList = ['http://localhost:3000'];
 
 const corsOptions = {
   origin(origin, callback) {
@@ -41,7 +38,10 @@ class App {
     this.app.use(helmet());
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
-    this.app.use('/images', express.static(resolve(__dirname, '..', 'uploads', 'images')));
+    this.app.use(
+      '/images',
+      express.static(resolve(__dirname, '..', 'uploads', 'images')),
+    );
   }
 
   routes() {
